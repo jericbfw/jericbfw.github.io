@@ -3,135 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vrosh</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>Vrosh Maintenance</title>
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
+            background-color: black;
             color: white;
-            padding: 20px;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        p {
             font-size: 24px;
         }
-        nav {
-            background-color: #444;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 10px;
-        }
-        .content {
-            display: none;
-        }
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            font-size: 14px;
-        }
-        .form-group {
-            margin: 15px 0;
-        }
-        input {
-            padding: 8px;
-            width: 80%;
-            margin: 5px 0;
-        }
-        button {
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        .google-btn {
-            background-color: #db4437;
-            margin-top: 10px;
-        }
     </style>
-    <script>
-        function showTab(tabId) {
-            let contents = document.querySelectorAll('.content');
-            contents.forEach(content => content.style.display = 'none');
-            document.getElementById(tabId).style.display = 'block';
-        }
-    </script>
 </head>
 <body>
-    <header>
-        Vrosh Corporation
-    </header>
-    <nav>
-        <a href="#" onclick="showTab('home')">Home</a>
-        <a href="#" onclick="showTab('about')">About</a>
-        <a href="#" onclick="showTab('services')">Services</a>
-        <a href="#" onclick="showTab('team')">Team</a>
-        <a href="#" onclick="showTab('careers')">Careers</a>
-        <a href="#" onclick="showTab('news')">News</a>
-        <a href="#" onclick="showTab('signup')">Sign Up</a>
-        <a href="#" onclick="showTab('login')">Login</a>
-        <a href="#" onclick="showTab('contact')">Contact</a>
-    </nav>
-    <div class="container">
-        <div id="home" class="content" style="display: block;">
-            <h1>Welcome to Vrosh</h1>
-            <p>We are committed to innovation and excellence. 🚀</p>
-        </div>
-        <div id="signup" class="content">
-            <h1>Sign Up</h1>
-            <p>Create an account to stay updated with our latest offerings.</p>
-            <form>
-                <div class="form-group">
-                    <input type="text" placeholder="Full Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Email Address" required>
-                </div>
-                <div class="form-group">
-                    <input type="password" placeholder="Password" required>
-                </div>
-                <button type="submit">Sign Up</button>
-            </form>
-        </div>
-        <div id="login" class="content">
-            <h1>Login</h1>
-            <p>Sign in to your account</p>
-            <form>
-                <div class="form-group">
-                    <input type="email" placeholder="Email Address" required>
-                </div>
-                <div class="form-group">
-                    <input type="password" placeholder="Password" required>
-                </div>
-                <button type="submit">Login</button>
-            </form>
-            <button class="google-btn">Sign in with Google</button>
-        </div>
-        <div id="contact" class="content">
-            <h1>Contact Us</h1>
-            <p>Email: hello@vrosh.com | Phone: +1 234 567 890</p>
-        </div>
+    <div>
+        <h1>Site Under Maintenance</h1>
+        <p>We are currently updating our site. Please try again later.</p>
     </div>
-    <footer>
-        &copy; 2025 Vrosh Corporation | All Rights Reserved
-    </footer>
 </body>
 </html>
