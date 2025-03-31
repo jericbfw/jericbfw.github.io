@@ -18,6 +18,16 @@
             padding: 20px;
             font-size: 24px;
         }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
         .container {
             max-width: 800px;
             margin: 40px auto;
@@ -25,6 +35,9 @@
             background: white;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             border-radius: 10px;
+        }
+        .content {
+            display: none;
         }
         footer {
             margin-top: 20px;
@@ -34,18 +47,47 @@
             font-size: 14px;
         }
     </style>
+    <script>
+        function showTab(tabId) {
+            let contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.style.display = 'none');
+            document.getElementById(tabId).style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <header>
         Vrosh Corporation
     </header>
+    <nav>
+        <a href="#" onclick="showTab('home')">Home</a>
+        <a href="#" onclick="showTab('about')">About</a>
+        <a href="#" onclick="showTab('services')">Services</a>
+        <a href="#" onclick="showTab('contact')">Contact</a>
+    </nav>
     <div class="container">
-        <h1>Welcome to Vrosh</h1>
-        <p>We are committed to innovation and excellence. 🚀</p>
+        <div id="home" class="content" style="display: block;">
+            <h1>Welcome to Vrosh</h1>
+            <p>We are committed to innovation and excellence. 🚀</p>
+        </div>
+        <div id="about" class="content">
+            <h1>About Us</h1>
+            <p>Vrosh Corporation is a leading provider of tech solutions worldwide.</p>
+        </div>
+        <div id="services" class="content">
+            <h1>Our Services</h1>
+            <p>We offer software development, cloud solutions, and more.</p>
+        </div>
+        <div id="contact" class="content">
+            <h1>Contact Us</h1>
+            <p>Email: contact@vrosh.com | Phone: +1 234 567 890</p>
+        </div>
     </div>
     <footer>
         &copy; 2025 Vrosh Corporation | All Rights Reserved
     </footer>
+</body>
+</html>
 </body>
 </html>
 
