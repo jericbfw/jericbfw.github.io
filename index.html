@@ -3,32 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vrosh Maintenance</title>
+    <title>Vrosh Corporation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: black;
-            color: white;
+            margin: 0;
+            padding: 0;
             text-align: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
+            background-color: #f4f4f4;
         }
-        h1 {
-            font-size: 48px;
-            margin: 0;
-        }
-        p {
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
             font-size: 24px;
         }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .content {
+            display: none;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            font-size: 14px;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        input {
+            padding: 8px;
+            width: 80%;
+            margin: 5px 0;
+        }
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .google-btn {
+            background-color: #db4437;
+            margin-top: 10px;
+        }
+        .team-member {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+            width: 200px;
+        }
+        .team-member img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .career-btn {
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .team {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     </style>
+    <script>
+        function showTab(tabId) {
+            let contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.style.display = 'none');
+            document.getElementById(tabId).style.display = 'block';
+        }
+    </script>
 </head>
 <body>
-    <div>
-        <h1>Site Under Maintenance</h1>
-        <p>We are currently updating our site. Please try again later.</p>
-    </div>
-</body>
-</html>
+    <header>
+        Vrosh Corporation
+    </header>
+    <nav>
+        <a href="#" onclick="showTab('home')">Home</a>
+        <a href="#" onclick="showTab('about')">About</a>
+        <a href="#" onclick="
