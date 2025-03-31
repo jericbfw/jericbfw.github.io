@@ -42,10 +42,29 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            background-size: cover;
+            background-position: center;
+        }
+        #home {
+            background: url('https://source.unsplash.com/1600x900/?technology,developer') no-repeat center center;
+        }
+        #about {
+            background: url('https://source.unsplash.com/1600x900/?workspace,coding') no-repeat center center;
+        }
+        #projects {
+            background: url('https://source.unsplash.com/1600x900/?laptop,design') no-repeat center center;
+            background-color: rgba(0, 0, 0, 0.6);
+            background-blend-mode: overlay;
+        }
+        #contact {
+            background: url('https://source.unsplash.com/1600x900/?email,network') no-repeat center center;
         }
         .hero {
             font-size: 40px;
             font-weight: bold;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
         }
         .btn {
             margin-top: 20px;
@@ -59,7 +78,6 @@
             text-decoration: none;
         }
         .projects, .contact {
-            background: #222;
             padding: 50px 20px;
         }
     </style>
